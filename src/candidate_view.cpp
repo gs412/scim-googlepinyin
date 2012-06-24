@@ -24,7 +24,7 @@ CandidateView::CandidateView(GooglePyInstance *pinyin, DecodingInfo *dec_info)
       m_dec_info(dec_info),
       m_page_no(-1),
       m_cand_in_page(0),
-      m_page_size(9),
+      m_page_size(5),
       m_active_highlight(true)
 {}
 

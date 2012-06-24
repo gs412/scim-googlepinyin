@@ -38,7 +38,7 @@ PinyinLookupTable::PinyinLookupTable(const DecodingInfo *dec_info,
 {
     std::vector <WideString> labels;
     char buf [2] = { 0, 0 };
-    for (int i = 0; i < 9; ++i) {
+    for (int i = 0; i < 5; ++i) {
         buf [0] = '1' + i;
         labels.push_back (utf8_mbstowcs (buf));
     }

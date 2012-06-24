@@ -278,7 +278,7 @@ GooglePyInstance::GooglePyInstance (GooglePyFactory *factory,
     m_decoder_service = m_factory->create_decoder_service();
     m_pinyin_ime = new PinyinIME(m_decoder_service, func_keys, this);
     m_lookup_table = new PinyinLookupTable(m_pinyin_ime->get_decoding_info(),
-                                           9);
+                                           5);
     m_reload_signal_connection =
         factory->m_config->signal_connect_reload (
             slot (this, &GooglePyInstance::reload_config));
@@ -428,7 +428,7 @@ GooglePyInstance::trigger_property (const String &property)
 void
 GooglePyInstance::init_lookup_table_labels ()
 {
-    m_lookup_table->set_page_size (9);
+    m_lookup_table->set_page_size (5);
     m_lookup_table->show_cursor ();
 }
 
